@@ -1,0 +1,311 @@
+body {
+  background-color: #fff6e6;
+}
+/* Estilos para el header y el navbar */
+header {
+  background-color: #620808;
+  color: #ffe9c1;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin: 0 10px;
+  transition: all .2s ease-in-out; 
+}
+
+nav ul li a {
+  color: #ffe9c1;
+  text-decoration: none;
+  font-size: 18px;
+  
+}
+nav ul li:hover{ transform: scale(1.1); }
+
+/* Estilos para la sección de portada */
+#portada {
+  background-image: url("assets/stock3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#portada h1 {
+  text-rendering: optimizeLegibility;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0px auto;
+  color: whitesmoke;
+  font-size: 100px;
+  letter-spacing: 5px;
+  top: 50%;
+  text-shadow: -1px -1px 0px black, 3px 3px 0px black, 6px 6px 0px black;
+  margin-bottom: 10px;
+}
+
+#portada p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: whitesmoke;
+  letter-spacing: 0.1em;
+  text-shadow: 0 -1px 0 #ffe9c1, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c,
+    0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+/* From uiverse.io by @Ali-Tahmazi99 */
+button {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  width: 175px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #03045e;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}
+
+button::before,
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+button::before {
+  left: -10px;
+  background: #620808;
+}
+
+button::after {
+  right: -10px;
+  background: #620808;
+}
+
+button:hover::before,
+button:hover::after {
+  width: 58%;
+}
+
+button:hover span a {
+  color: #ffe9c1;
+  transition: 0.3s;
+}
+
+button span a {
+  color: #620808;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+button:hover {
+  color: #ffe9c1;
+  transition: 0.3s;
+}
+
+button {
+  color: #620808;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+/* Estilos para la sección de Acerca de nosotros */
+#aboutus {
+  font-family: "Montserrat", sans-serif;
+  padding: 80px 20px;
+  background-color: #fff6e6;
+  text-align: center;
+}
+
+#aboutus h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #620808;
+}
+
+#aboutus p {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+/* Estilos para la sección de productos */
+#productos {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff6e6;
+  font-family: "Montserrat", sans-serif;
+}
+
+#productos h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #620808;
+}
+
+.card {
+  background-color: #ffe9c1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 0 20px 40px;
+  padding: 8px;
+  width: 300px;
+  transition: all .2s ease-in-out; 
+}
+.card:hover{transform: scale(1.1); }
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+  color: #620808;
+}
+
+.card .price {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #620808;
+}
+
+.card button {
+  background-color: #3a0404;
+  border: none;
+  color: #ffe9c1;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #555;
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+  padding: 80px 20px;
+  background-color: #fff6e6;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #620808;
+}
+
+#contacto h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#contacto form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contacto form label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+#contacto form input[type="text"],
+#contacto form input[type="email"],
+#contacto form textarea {
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+#contacto form input[type="submit"] {
+  background-color: #333;
+  color: #ffe9c1;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#contacto form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+#contacto .info {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#contacto .info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#contacto .info iframe {
+  
+  border-radius: 1rem;
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #620808;
+  color: #ffe9c1;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 20px;
+}
