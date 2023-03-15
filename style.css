@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-*{
+* {
   margin: 0px;
 }
 .gradient {
-  background: rgb(2,0,36);
-background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(98,8,8,1) 0%, rgba(255,233,193,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(98, 8, 8, 1) 0%,
+    rgba(255, 233, 193, 1) 100%
+  );
 }
 
 /* Estilos para el header y el navbar */
@@ -175,7 +180,7 @@ a:visited {
 #productos {
   padding: 80px 20px;
   text-align: center;
- 
+
   font-family: "Montserrat", sans-serif;
 }
 
@@ -201,7 +206,6 @@ a:visited {
   height: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-
 }
 
 .card h3 {
@@ -229,22 +233,21 @@ a:visited {
 .card button:hover {
   background-color: #555;
 }
-.products:hover .card{
+.products:hover .card {
   filter: blur(3px);
-  opacity: .5;
-  transform: scale(.98);
+  opacity: 0.5;
+  transform: scale(0.98);
   box-shadow: none;
 }
-.products:hover .card:hover{
+.products:hover .card:hover {
   transform: scale(1.1);
   filter: blur(0px);
   opacity: 1;
-
 }
 /* Estilos para la sección de contacto */
 #contacto {
   padding: 80px 20px;
-  
+
   text-align: center;
   font-family: "Montserrat", sans-serif;
   color: #620808;
@@ -307,6 +310,89 @@ a:visited {
   font-size: 18px;
   margin-bottom: 20px;
 }
+.sharebtn span {
+  width: 200px;
+  line-height: 80px;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+.sharebtn nav {
+  font-size: 0;
+}
+.sharebtn a {
+  line-height: 80px;
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  margin: 0 -5px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(98, 8, 8, 1) 0%,
+    rgba(255, 233, 193, 1) 100%
+  );
+  color: #620808;
+}
+.sharebtn a:nth-child(1) {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-left: 0px;
+}
+.sharebtn a:nth-child(5) {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-right: 0px;
+}
+.sharebtn a:nth-child(1):hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+.sharebtn a:nth-child(2):hover {
+  background-color: black;
+}
+.sharebtn a:nth-child(3):hover {
+  background: #3a5795;
+  background: linear-gradient(to bottom, #3a5795 0%, #2b4886 100%);
+}
+.sharebtn a:nth-child(4):hover {
+  background-color: #c4302b;
+}
+.sharebtn a:nth-child(5):hover {
+  background-color: #25d366;
+}
+.sharebtn:hover span,
+.share.hover span {
+  opacity: 0;
+}
+.sharebtn:hover a,
+.share:hover a {
+  margin: 0 10px;
+  color: #2c2c2c;
+  font-size: 28px;
+  border-radius: 1rem;
+  background: #262626;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+.sharebtn:hover a:hover,
+.share:hover a:hover {
+  color: #fff;
+}
 
 #contacto .info iframe {
   border-radius: 1rem;
@@ -315,8 +401,8 @@ a:visited {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.ubicacion{
-  margin-top:  20px;
+.ubicacion {
+  margin-top: 20px;
   padding: 1rem;
   gap: 5px;
 }
