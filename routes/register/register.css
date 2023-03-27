@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+  
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.5;
+    background: rgb(117, 170, 219);
+    background: linear-gradient(
+      180deg,
+      rgba(117, 170, 219, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    padding: 0 2rem;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /*ios reset*/
+  input {
+    appearance: none;
+    border-radius: 0;
+  }
+  
+  .card {
+    margin: 0.5rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 425px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(#999, 0.25);
+    padding: 0.75rem;
+  }
+  
+  .card-image {
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 65%;
+    background-image: url("../../assets/messi_topo.jpg");
+    background-repeat: no-repeat;
+  
+    background-size: cover;
+    background-position: 0 5%;
+    position: relative;
+  }
+  
+  .card-heading {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    right: 10%;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #f2f2f2;
+    line-height: 1.222;
+  }
+  small {
+    display: block;
+    font-size: 0.75em;
+    font-weight: 400;
+    margin-top: 0.25em;
+  }
+  .card-form {
+    padding: 2rem 1rem 0;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-top: 1.5rem;
+  }
+  
+  .input-label {
+    color: #8597a3;
+    position: absolute;
+    top: 1.5rem;
+    transition: 0.25s ease;
+  }
+  
+  .input-field {
+    border: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee;
+    font: inherit;
+    font-size: 1.125rem;
+    padding: 0.25rem 0;
+  }
+  .input-field:focus,
+  input:valid {
+    outline: 0;
+    border-bottom-color: #75aadb;
+  }
+  input:valid + .input-label {
+    color: #75aadb;
+    transform: translateY(-1.5rem);
+  }
+  
+  .action {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .action-button {
+    display: inline-block;
+    width: 175px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #6999c5;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+  }
+  button::before,
+  button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  button::before {
+    left: -10px;
+    background: #6999c5;
+  }
+  
+  button::after {
+    right: -10px;
+    background: #6999c5;
+  }
+  
+  button:hover::before,
+  button:hover::after {
+    width: 58%;
+  }
+  
+  button:hover span a {
+    color: #ffffff;
+    transition: 0.3s;
+  }
+  
+  button span a {
+    color: #6999c5;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+  }
+  button:hover {
+    color: #ffffff;
+    transition: 0.3s;
+  }
+  
+  button {
+    color: #6999c5;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+  }
+  
+  .card-info {
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #8597a3;
+  }
+  a {
+    display: block;
+    color: #75aadb;
+    text-decoration: none;
+  }
+  a:hover {
+    scale: 1.25;
+    transition: 1s;
+  }
+  

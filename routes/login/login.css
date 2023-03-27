@@ -22,7 +22,7 @@ body {
   );
   padding: 0 2rem;
 }
-
+.back{color: red;}
 img {
   max-width: 100%;
   display: block;
@@ -50,9 +50,8 @@ input {
   border-radius: 8px;
   overflow: hidden;
   padding-bottom: 65%;
-  background-image: url("../assets/messi_topo.jpg");
+  background-image: url("../../assets/messi_topo.jpg");
   background-repeat: no-repeat;
-
   background-size: cover;
   background-position: 0 5%;
   position: relative;
