@@ -61,7 +61,6 @@ nav ul li:hover {
 }
 
 #portada h1 {
-  
   font-family: "Bebas Neue", cursive;
   text-align: center;
   text-transform: uppercase;
@@ -85,7 +84,7 @@ nav ul li:hover {
     0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626,
     0 22px 30px rgba(0, 0, 0, 0.9);
 }
-/* From uiverse.io by @Ali-Tahmazi99 */
+/* Button styles */
 button {
   font-family: "Montserrat", sans-serif;
   display: inline-block;
@@ -97,7 +96,7 @@ button {
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease-in;
-  z-index: 1;
+  z-index: 3;
 }
 
 button::before,
@@ -153,6 +152,13 @@ button {
   font-family: "Montserrat", sans-serif;
   padding: 80px 20px;
 
+  text-align: center;
+}
+
+/* Estilos para la sección de Acerca de nosotros */
+#aboutus {
+  font-family: "Montserrat", sans-serif;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -343,7 +349,7 @@ a:visited {
   background-color: #620808;
 }
 .sharebtn a:nth-child(1) {
-  border-top-left-radius:1rem;
+  border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   margin-left: 0px;
 }
@@ -399,7 +405,7 @@ a:visited {
   border-radius: 1rem;
   font-size: 20px;
   font-weight: 700;
-  display:inline-block;
+  display: inline-block;
   background-color: #620808;
   color: #ffe9c1;
 }
@@ -422,4 +428,98 @@ footer {
   right: 0;
   text-align: center;
   margin-top: 20px;
+}
+/*tablet mediaqueries*/
+@media (max-width: 1024px) {
+  .item5,
+  .item3 {
+    display: none;
+  }
+  #aboutus h2 {
+    font-size: 40px;
+  }
+  #productos h2 {
+    font-size: 50px;
+  }
+  #contacto {
+    display: flex;
+    flex-flow: column;
+  }
+  .input {
+    margin-bottom: 50px;
+  }
+  .ubicacion h2 {
+    font-size: 40px;
+  }
+}
+/*small movile devices mediaqueries*/
+@media (max-width: 768px) {
+  nav {
+    width: 100vw;
+  }
+  #portada {
+    width: 100vw;
+  }
+  #portada h1 {
+    font-size: 5rem;
+  }
+  #portada p {
+    font-size: 1rem;
+  }
+  #aboutus {
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+  }
+  #aboutus h2 {
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+  }
+  #aboutus p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  #productos {
+    width: 100vw;
+    padding: 0;
+  }
+  .card {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card h3 {
+    font-size: 1rem;
+  }
+  .card p {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .card button {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .item4,
+  .item5,
+  .item6 {
+    display: none;
+  }
+  .sharebtn span {
+    width: 100vw;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 17%;
+  }
+  .sharebtn a {
+    width: 50px;
+    text-align: center;
+  }
 }
