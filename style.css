@@ -47,6 +47,42 @@ nav ul li a {
 nav ul li:hover {
   transform: scale(1.1);
 }
+.menu-button {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  cursor: pointer;
+}
+.menu-button span {
+  width: 40px;
+  height: 4px;
+  background: white;
+}
+.menu-toggle {
+  display: none;
+}
+.menu-button {
+  display: none;
+}
+.toggle {
+  display: none;
+  text-align: center;
+  background: #620808;
+  border-radius: 7px;
+  padding: 20px;
+  width: 150px;
+  margin: 10px auto;
+}
+.toggle li {
+  list-style: none;
+  display: block;
+  padding: 10px 0;
+  color: #ffe9c1;
+}
+.menu-toggle:checked + .toggle {
+  display: block;
+}
 
 /* Estilos para la sección de portada */
 #portada {
@@ -175,7 +211,6 @@ a:link {
 a:visited {
   text-decoration: none;
 }
-
 
 /* Estilos para la sección de productos */
 #productos {
@@ -396,7 +431,6 @@ a:visited {
   color: #fff;
 }
 .help {
-  
   height: 75px;
   margin-top: 20px;
   padding: 1rem;
@@ -404,7 +438,6 @@ a:visited {
   font-weight: 900;
   display: inline-block;
   color: #620808;
-
 }
 
 #contacto .info iframe {
@@ -431,33 +464,33 @@ footer {
   header {
     padding: 10px;
   }
-  
+
   nav ul li {
     margin: 0 5px;
   }
-  
+
   #portada h1 {
     font-size: 150px;
   }
-  
+
   #portada p {
     font-size: 20px;
   }
-  
+
   button {
     width: 150px;
     height: 40px;
     font-size: 14px;
   }
-  
+
   #aboutus {
     padding: 40px 10px;
   }
-  
+
   #productos h2 {
     font-size: 30px;
   }
-  
+
   .card {
     width: 250px;
   }
@@ -468,33 +501,33 @@ footer {
   header {
     padding: 15px;
   }
-  
+
   nav ul li {
     margin: 0 8px;
   }
-  
+
   #portada h1 {
     font-size: 200px;
   }
-  
+
   #portada p {
     font-size: 25px;
   }
-  
+
   button {
     width: 175px;
     height: 45px;
     font-size: 16px;
   }
-  
+
   #aboutus {
     padding: 60px 20px;
   }
-  
+
   #productos h2 {
     font-size: 32px;
   }
-  
+
   .card {
     width: 275px;
   }
@@ -505,81 +538,145 @@ footer {
   header {
     padding: 20px;
   }
-  
+
   nav ul li {
     margin: 0 10px;
   }
-  
+
   #portada h1 {
     font-size: 250px;
   }
-  
+
   #portada p {
     font-size: 30px;
   }
-  
+
   button {
     width: 175px;
     height: 50px;
     font-size: 18px;
   }
-  
+
   #aboutus {
     padding: 80px 20px;
   }
-  
+
   #productos h2 {
     font-size: 36px;
   }
-  
+
   .card {
     width: 300px;
   }
 }
 /* Estilos para el header y el navbar en pantallas pequeñas */
-@media only screen and (max-width: 240px) {
+@media only screen and (min-width: 240px) and (max-width: 760px) {
   header {
-    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
   }
-  
+
   nav ul li {
-    margin: 0 5px;
+    display: none;
   }
-  
+
   nav ul li a {
     font-size: 14px;
   }
-  
-  #portada h1 {
-    font-size: 100px;
+  .menu-button {
+    display: flex;
   }
-  
+
+  #portada {
+    width: 100vw;
+  }
+  #portada h1 {
+    font-size: 50px;
+  }
+
   #portada p {
     font-size: 18px;
   }
-  
+
   button {
-    width: 120px;
-    height: 35px;
-    font-size: 14px;
+    width: 40%;
+    height: 50px;
+    font-size: 12px;
   }
-  
+
   #aboutus h2 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
-  
+
   #aboutus p {
     font-size: 14px;
   }
-  
+
   #productos h2 {
     font-size: 24px;
     margin-bottom: 20px;
   }
-  
-  .card {
-    width: 200px;
+  #productos {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
   }
-}
+  .products {
+    padding: 5px;
+  }
 
+  .card {
+    width: 90%;
+    height: 270px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .card img {
+    height: 50%;
+    width: 50%;
+  }
+  .card h3 {
+    font-size: 12px;
+    margin: 5px;
+  }
+  .card .price {
+    font-size: 15px;
+  }
+  .card button {
+    width: 50%;
+    height: 40px;
+  }
+  .sharebtn {
+    display: none;
+  }
+  .help {
+    font-size: 15px;
+    margin: 10px;
+  }
+  #contacto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 90%;
+    height: 500px;
+  }
+  #contacto h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  #contacto form{
+    width: 80%;
+  }
+  #contacto form label{
+    font-size: 15px;
+    margin: bottom 5px;
+  }
+  .ubicacion {
+    display: none;
+  }
+  footer{margin-top: 0px;
+  font-size: 15px;}
+}
