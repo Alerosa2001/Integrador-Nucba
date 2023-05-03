@@ -12,28 +12,18 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="navbar">
+        <label class="menu-label" for="menu-toggle"
+          ><i class="fa-solid fa-bars" style="color: #ffffff"></i
+        ></label>
+        <input id="menu-toggle" type="checkbox">
+        <ul class="navbar-list">
           <li><a href="#portada">Inicio</a></li>
           <li><a href="#aboutus">Acerca de nosotros</a></li>
           <li><a href="#productos">Productos</a></li>
           <li><a href="#contacto">Contacto</a></li>
           <li><a href="routes/login/login.html">Iniciar Sesion</a></li>
-          <label for="menu-toggle">
-            <div class="menu-button">
-              <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-            </div>
-          </label>
-          <input type="checkbox" class="menu-toggle" id="menu-toggle" />
-          <ul class="toggle">
-            <li>Inicio</li>
-            <li>Acerca de Nosotros</li>
-            <li>Productos</li>
-            <li>Contacto</li>
-            <li>Iniciar Sesion</li>
-          </ul>
         </ul>
-        
       </nav>
     </header>
 
@@ -120,14 +110,14 @@
             <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
           </nav>
         </div>
-        <div class="help">
-          <h3>
-            ¿No encontraste el modelo que buscabas? <br />
-            ¡Completa el formulario de contacto con tus datos, el modelo que
-            quieras y te lo traemos!
-          </h3>
-        </div>
       </section>
+      <div class="help">
+        <h3>
+          ¿No encontraste el modelo que buscabas? <br />
+          ¡Completa el formulario de contacto con tus datos, el modelo que
+          quieras y te lo traemos!
+        </h3>
+      </div>
 
       <section id="contacto">
         <div class="input">
